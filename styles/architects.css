@@ -143,6 +143,55 @@ position: relative;
 
 
 
+/*features 10+ year*/
+
+
+.features-card-box{
+    margin-top: 130px;
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+#red-line{
+border-left: 5px solid #FF900E;
+padding-left: 8px;
+}
+.card{
+    padding-left: 10px;
+    border: 1px solid rgb(231, 231, 199);
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: rgba(10, 10, 50, 10, 60);
+}
+
+.card-er-height{
+    margin-left: 20px;
+}
+.architect{
+    height: 780px;
+    width: 100%;
+}
+#badge{
+    font-family: "Work Sans", sans-serif;
+    height: 100px;
+    width: 200px;
+    border-radius:5px;
+    font-size: 1rem;
+    margin-top: -100px;
+    margin-left: -30px;
+
+}
+#year{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
 /*responsive*/
 
 @media (max-width: 768px) {
@@ -209,4 +258,51 @@ position: relative;
     margin-top: 10px;
     max-width: 100%;
    }
+  }
+
+  
+  /*features responsive*/
+
+
+  @media (max-width: 768px) {
+    .features-card-box{
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .card{
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .card-er-height{
+        margin-left: 0;
+    }
+
+    .architect{
+        margin-bottom: 100px;
+        height: 400px;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+    }
+
+   #badge{
+    font-family: "Work Sans", sans-serif;
+    height: 100px;
+    width: 200px;
+    border-radius:5px;
+    font-size: 1rem;
+    margin-left: 2px;
+    margin-bottom: 100px;
+
+}
+#year{
+    font-size: 2rem;
+    font-weight: 700;
+}
   }
