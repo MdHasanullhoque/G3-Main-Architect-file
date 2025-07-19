@@ -186,7 +186,88 @@ padding-left: 8px;
     font-weight: 700;
 }
 
+/*reward-box*/
+.box-container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
+.some-facts{
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+
+.box-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.box{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.box-container .box-names{
+    font-family: "Work Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color:#727272;
+}
+
+/*Our Sponspors*/
+
+.logo-container{
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    margin-top: 100px;
+ 
+}
+
+
+.spons-para{
+    font-family: "Work Sans", sans-serif;
+    color: #727272;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    filter: grayscale(100%);
+}
+.logos-img{
+    margin-top: 30px;
+    width: 100px;
+    height: 50;
+}
+
+/*copy writes*/
+.copywrites{
+    font-family: "Work Sans", sans-serif;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #FFF4E7;
+}
+.copy{
+    font-family: "Work Sans", sans-serif;
+    font-size: .8rem;
+    font-weight:normal;
+}
+
+.copy .my-name{
+    font-style: italic;
+    color:#FF900E;
+    font-weight: 500;
+    font-family: "Work Sans", sans-serif;
+}
 
 
 
@@ -265,7 +346,7 @@ padding-left: 8px;
 
 
   @media (max-width: 768px) {
-    .features-card-box{
+      .features-card-box{
         margin-top: 30px;
         flex-direction: column;
         align-items: center;
@@ -305,4 +386,50 @@ padding-left: 8px;
     font-size: 2rem;
     font-weight: 700;
 }
+
+ .box-container{
+    margin-top: -150px;
   }
+
+  }
+
+ 
+
+
+  /* sponsors responsive*/
+
+  @media (max-width: 768px) {
+    .logo-container h1{
+        font-size: 25px;
+    }
+    .spons-para{
+        font-size: 15px;
+    }
+    .logos{
+
+    }
+.logos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    filter: grayscale(100%);
+}
+.logos-img{
+    margin-top: 20px;
+    width: 100px;
+    height: 50;
+}
+
+
+  }
+
+@media (max-width: 768px) {
+    .copy{
+    font-family: "Work Sans", sans-serif;
+    font-size: 0.5rem;
+}
+}
+
